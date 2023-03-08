@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zar_At" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen1136x1136" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-Mg-Ese">
+                                <rect key="frame" x="0.0" y="-30" width="393" height="882"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="lo9-2T-fSx">
+                                <rect key="frame" x="221" y="362" width="135" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="uY5-0f-XRc">
+                                <rect key="frame" x="28" y="362" width="135" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZe-gg-3fV">
+                                <rect key="frame" x="143" y="584" width="110" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" red="0.56078433989999998" green="0.1176470518" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Zar At">
+                                            <attributes>
+                                                <font key="NSFont" size="38" name="Impact"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJw-X4-W3b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3FR-Qi-JD7"/>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DWe-FN-6gS"/>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H7Z-KI-m0m"/>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MaK-pi-JiY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ywk-Mg-Ese" secondAttribute="trailing" id="PEE-8I-OhE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ywk-Mg-Ese" secondAttribute="bottom" id="R17-lF-nyQ"/>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VB6-DN-nti"/>
+                            <constraint firstItem="Ywk-Mg-Ese" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dX6-67-Yio"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="left" destination="uY5-0f-XRc" id="Ffu-WH-FBP"/>
+                        <outlet property="right" destination="lo9-2T-fSx" id="fuR-FK-Dt9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="256" height="256"/>
+        <image name="dice2" width="256" height="256"/>
+        <image name="screen1136x1136" width="640" height="1136"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
